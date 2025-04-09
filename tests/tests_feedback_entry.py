@@ -1,3 +1,5 @@
+import pytest
+from features.feedback_entry import collect_feedback
 def test_collect_feedback_empty_input(monkeypatch):
     """Test that collect_feedback handles empty input."""
     inputs = iter(['', '', ''])
